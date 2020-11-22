@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE web-app
+        PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+    <display-name>Tenant Link</display-name>
+    <description>House Brokering System</description>
+
+
+<welcome-file-list>
+<welcome-file>login.html</welcome-file>
+</welcome-file-list>
+
+<servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>ryan.Login</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/Login</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>SignupLandlord</servlet-name>
+<servlet-class>ryan.SignupLandlord</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>SignupLandlord</servlet-name>
+<url-pattern>/SignupLandlord</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>SignupTenant</servlet-name>
+<servlet-class>ryan.SignupTenant</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>SignupTenant</servlet-name>
+<url-pattern>/SignupTenant</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>VerifyTenantRequest</servlet-name>
+<servlet-class>ryan.VerifyTenantRequest</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>VerifyTenantRequest</servlet-name>
+<url-pattern>/VerifyTenantRequest</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>AddProperty</servlet-name>
+<servlet-class>ryan.AddProperty</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>AddProperty</servlet-name>
+<url-pattern>/AddProperty</url-pattern>
+</servlet-mapping>
+
+<error-page>
+<error-code>404</error-code>
+<location>/404.html</location>
+</error-page>
+</web-app>
